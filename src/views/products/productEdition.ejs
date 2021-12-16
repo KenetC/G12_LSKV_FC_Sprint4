@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include( '../partials/head') %>
+    
+    <body>
+    
+        <%- include('../partials/header') %>
+
+        <%- include('../partials/back') %>
+        <main class="charger">
+            <div>
+                <form action="">
+                    <fieldset class="form-prod-char">
+                        <legend class="legend-formulario">Editar producto</legend>
+
+                        <div>
+                            <label for="">Nombre</label>
+                            <input type="text">
+                        </div>
+
+                        <div>
+                            <label for="">Precio</label>
+                            <input type="number">
+                        </div>
+
+                        <div>
+                            <label for="">Descripción</label>
+                            <textarea name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="">Imagen</label>
+                            <input type="file">
+                        </div>
+                        
+                        <div>
+                            <label for="">Categoria </label>
+                            <select name="about" id="">
+                                <option value="Blusas">Blusas</option>
+                                <option value="Remeras">Remeras</option>
+                                <option value="Vestidos">Vestidos</option>
+                                <option value="Monos">Monos</option>
+                                <option value="Shorts">Shorts</option>
+                                <option value="Faldas">Faldas</option>
+                                <option value="Jeans">Jeans</option>
+                            </select>
+                        </div>
+                       
+                        <div>
+                            <label for="">Color</label>
+                            <input type="color">
+                        </div>
+
+                        <div class="talle">
+                            <label for="">Talle</label>
+                            <div class="checkbox-input">
+                                <input type="checkbox">XS
+                                <input type="checkbox">S
+                                <input type="checkbox">M
+                                <input type="checkbox">L
+                                <input type="checkbox">XL
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Publicar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <%- include('../partials/footer') %> 
+    </body>  
