@@ -19,5 +19,15 @@
   "fNac": "0032-03-12",
   "image": "avatar-1639601375405.PNG",
   "id": 2
+ },
+ {
+  "email": "asd@gmail.com",
+  "password": "adfsd",
+  "name": "asd",
+  "surname": "asd",
+  "dni": "124124",
+  "fNac": "12312-03-21",
+  "image": "avatar-1639663812808.PNG",
+  "id": 3
  }
 ]
