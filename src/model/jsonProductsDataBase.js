@@ -63,7 +63,20 @@ const modelController =function(name){
                 return entra;
             });
             return filtered; 
-        }
+        },
+        // Busca por field al primer elemento de la DB que cumpla con las condiciones de la busqueda, devuelve 1 elemento
+        findFirstByField: function(field, text){
+            let rows = this.all();
+            let elementFound = rows.find(element => element[field] === text);
+            return elementFound;
+        },
+        // Busca por field a todos los elementos de la DB que cumplan con las condiciones de la busqueda, devuelve 1 array
+        findAllByField: function(field, text){
+            let rows = this.all();
+            let allElementsFound = rows.filter(element => element[field] === text);
+            return allElementsFound;
+        },
+
 
     };
 };
