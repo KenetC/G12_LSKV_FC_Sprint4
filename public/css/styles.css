@@ -5,7 +5,7 @@
 }
 
 header nav {
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 nav{
@@ -791,6 +791,68 @@ main.productList .products article img{
     width: 100%;
     padding: 5px;
     text-align: center;
+}
+/* UsersList */
+
+main.usersList h2.title{ 
+    display: flex;
+    justify-content:center ;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+main.usersList h2.title::before{
+    width: 170px;
+    height: 1px;
+    bottom: 4px;
+    position: absolute;
+    content: "";
+    border-bottom:3px solid #BA135D ;
+}
+main.usersList section { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main.usersList article { 
+    width: 321px;
+    display: flex;
+    background-color: #b78057;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px;
+}
+
+main.usersList article a img { 
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: grid;
+    align-self: center;
+}
+
+main.usersList div.description{ 
+    color: gainsboro;
+    text-align:start;
+    padding-left: 15px;
+    padding-top: 5px;
+    position: relative;
+}
+
+main.usersList div.description::before { 
+    content: "";
+    height: 90px;
+    position: absolute;
+    left: 5px;
+    border-left: 1px solid rgb(228, 228, 228);
+}
+div.description p.name { 
+    font-size: 14px;
+}
+div.description p.birthday-date,
+div.description p.email { 
+    font-size: 13px;
 }
 
 /* Product car *//*titulo carrito con paso*/

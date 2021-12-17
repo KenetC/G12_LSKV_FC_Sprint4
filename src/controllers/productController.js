@@ -8,7 +8,8 @@ const productController = {
     },
     
     list: (req,res) => {
-        return res.render("products/productList", {productList : listaProducts})
+        const productList = productModel.all();
+        return res.render('products/productList', { productList })
     },
 
     create: (req,res) => {
@@ -21,6 +22,7 @@ const productController = {
     
     filter: (req,res)=>{ 
         let query = req.query; 
+        
         // Antes que nada lo pasamos a array para mas comodidad: 
         const categs = Object.values(query);
 
@@ -28,7 +30,7 @@ const productController = {
             const final = productModel.filterForCategorys(categs);
             return res.send(final)
         }else { 
-            return res.send("Son varios valores")
+            return res.send(`${query}`)
         }
     },
 

@@ -27,6 +27,11 @@ const usersController = {
 			return next(error)
 		}
 	},
+
+	list: (req,res)=>{
+		const users = userModel.all(); 
+		res.render('users/usersList',{users});
+	}
 }
 
 module.exports = usersController;

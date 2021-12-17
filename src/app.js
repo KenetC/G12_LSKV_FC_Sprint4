@@ -15,7 +15,6 @@ app.use(methodOverride('_method')); // Para poder pisar el method="POST" en el f
 const usersRoutes = require('./routers/userRoutes');
 const productRoutes = require('./routers/productRoutes');
 const homeRoutes = require('./routers/homeRoutes');
-const req = require('express/lib/request');
 
 app.use('/', homeRoutes);
 app.use('/products', productRoutes);
