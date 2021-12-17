@@ -25,7 +25,7 @@ router.get('/create',productController.create);
 
 router.get('/edition',productController.edition)
 
-router.get('/productDetail/:productId', productController.prodDetail );
+router.get('/:productId', productController.prodDetail );
 
 // mediante res query
 router.get('/filter', productController.filter);

@@ -3,7 +3,7 @@ const productModel = jsonDB('productsDataBase');
 
 const productController = {
     prodDetail: (req,res) =>{
-        let productC = listaProducts.find(product => product.id == req.params.productId)
+        let productC = productModel.find(req.params.productId)
         return res.render("products/productDetail",{ product: productC })    
     },
     

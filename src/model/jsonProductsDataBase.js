@@ -30,6 +30,7 @@ const modelController =function(name){
         find: function(id){ 
             const products = this.readFile(); 
             const product = products.find( prod => prod.id == id );
+            return product;
         }, 
 
         create: function(product){

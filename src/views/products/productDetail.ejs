@@ -34,13 +34,13 @@
                 </div>
 
                 <div class="product-description">
-                    <p class="nombre-prod"> <%= product.nombre %>  </p>
+                    <p class="nombre-prod"> <%= product.name %>  </p>
 
                     <div class="stars">
                         <div class="score">
                             <% for( let index = 1; index <= 5; index++ ) { %>
 
-                                <% if (index <= product.puntos) { %>
+                                <% if (index <= product.stars) { %>
                                     <i class="far fa-star" style="color: #d4b073;"></i>
                                  
                                 <% }else { %>
@@ -53,16 +53,16 @@
                         <p> 127437 Reviews </p>
                     </div>
 
-                    <p class="precio"> $<%= product.precio %>  </p>
+                    <p class="precio"> $<%= product.price %>  </p>
 
                     <div class="colors"> <!-- agregar al objeto una array de colores y iterarlos con un foreach-->
-                        <% product.colores.forEach(element => { %>
+                        <% product.colours.forEach(element => { %>
                             <a href="#"><i class="fas fa-circle" style="color:<%= element %>"></i></a>
                         <% }) %>
                     </div> 
 
                     <div class="talle">
-                        <% product.talles.forEach(element => { %>
+                        <% product.sizes.forEach(element => { %>
                             <a href="#"> <p><%= element %> </p> </a> 
                         <% }) %>
                     </div>
@@ -89,7 +89,7 @@
 
                     <div class = "description">
                         <p class="title"> Descripción</p>
-                        <p class="content"> <%= product.descripcion %> 
+                        <p class="content"> <%= product.description %> 
                         </p>
                     </div>
                 </div>

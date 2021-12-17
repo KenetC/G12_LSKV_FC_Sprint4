@@ -19,6 +19,7 @@ const usersController = {
 		if (req.file){
 			console.log(req.file);
 			let aCrear = req.body;
+			aCrear.dni = Number(aCrear.dni);
 			aCrear.image = req.file.filename;
 			let aCrearID = userModel.create(aCrear);
 			res.redirect(`/`);

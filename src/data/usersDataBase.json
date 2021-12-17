@@ -38,5 +38,16 @@
   "fNac": "0012-03-12",
   "image": "avatar-1639753177271.PNG",
   "id": 4
+ },
+ {
+  "user-name": "Juan Pepe",
+  "password": "",
+  "name": "pepe",
+  "surname": "Apellido",
+  "email": "kenetchape@gmail.com",
+  "dni": 121,
+  "fNac": "3333-12-12",
+  "image": "avatar-1639770475111.PNG",
+  "id": 5
  }
 ]
