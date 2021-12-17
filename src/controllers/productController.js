@@ -1,76 +1,10 @@
-let listaProducts = [
-    {
-        id:1,
-        nombre:'Remera blanca con estampado',
-        precio: '100.000',
-        descripcion:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime',
-        img: 'img-ropa.jpeg',
-        categoria: 'ropa',
-        colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL'],
-        puntos: 3
-    },
-    {
-        id:2,
-        nombre:'Remera blanca con estampado',
-        precio: '100.000',
-        descripcion:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime',
-        img: 'img-ropa.jpeg',
-        categoria: 'ropa',
-        colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL'],
-        puntos: 2
-    },
-    {
-        id:3,
-        nombre:'Remera blanca con estampado',
-        precio: '100.000',
-        descripcion:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime',
-        img: 'img-ropa.jpeg',
-        categoria: 'ropa',
-        colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL'],
-        puntos: 1
-    },
-    {
-        id:4,
-        nombre:'Remera blanca con estampado',
-        precio: '100.000',
-        descripcion:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime',
-        img: 'img-ropa.jpeg',
-        categoria: 'ropa',
-        colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL'],
-        puntos: 0
-    },
-    {
-        id:5,
-        nombre:'Remera blanca con estampado',
-        precio: '100.000',
-        descripcion:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime',
-        img: 'img-ropa.jpeg',
-        categoria: 'ropa',
-        colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL'],
-        puntos: 5
-    },
-    {
-        id:6,
-        nombre:'Remera blanca con estampado',
-        precio: '100.000',
-        descripcion:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime',
-        img: 'img-ropa.jpeg',
-        categoria: 'ropa',
-        colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL'],
-        puntos:4
-    }
-]
+const jsonDB = require('../model/jsonProductsDataBase');
+const productModel = jsonDB('productsDataBase');
 
 const productController = {
     prodDetail: (req,res) =>{
         let productC = listaProducts.find(product => product.id == req.params.productId)
-        return res.render("products/productDetail",{ product: productC })
+        return res.render("products/productDetail",{ product: productC })    
     },
     
     list: (req,res) => {
@@ -85,6 +19,19 @@ const productController = {
         return res.render("products/productEdition")
     },
     
+    filter: (req,res)=>{ 
+        let query = req.query; 
+        // Antes que nada lo pasamos a array para mas comodidad: 
+        const categs = Object.values(query);
+
+        if(Object.keys(query).length >1 ){
+            const final = productModel.filterForCategorys(categs);
+            return res.send(final)
+        }else { 
+            return res.send("Son varios valores")
+        }
+    },
+
     prodCart1: function(req,res) {
         return res.render("products/productCart")
     },

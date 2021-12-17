@@ -38,6 +38,7 @@ div.IngresarRegistrarse a{
 div.IngresarRegistrarse,
 div.list-container { 
     display: none;
+    color: #BA135D ;
 }
 
 .list-home {
@@ -150,14 +151,28 @@ section div .tittle-popu:before {
     border-bottom: 3px solid #BA135D;
 }
 
-section div .btn-popu button{
-    font-size: 20px;
-    padding: 10px 35px;
-    margin: 10px;
+.populares .popular-now .btn-popu{
+    display: flex;
+    justify-content: center;
+}
+
+.populares .popular-now .btn-popu a { 
+    text-decoration: none;
+    color: black;
+    width: 130px;
+    height: 55px;
+    border: 1px solid black;
+    margin: 20px 5px;
+    display: grid;
+    align-items: center;
+    background-color: #d8d7d773;
 }
 
 .products{
     margin-top: 1%;
+}
+div.products article a{ 
+    text-decoration: none;
 }
 
 .description{
@@ -681,7 +696,6 @@ main.charger{
 }
 
 main div form{
-    width: 100%;
     justify-content: center;
 }
 
@@ -689,33 +703,42 @@ main div form .form-prod-char{
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    width: 60%;
-
 }
 
 main div form fieldset .legend-formulario{
     text-align: center;
 }
 
-main div form fieldset div{
+main div form fieldset label{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5px;
+    flex-wrap: wrap;
 }
 
-main div form fieldset div .checkbox-input{
+form fieldset div.color,
+form fieldset div.checkbox-input{
     display: flex;
     flex-direction: row;
+    width: 358px;
 }
 
+main.charger div.check-c-s { 
+    margin: 0px;
+    display: block;
+}
+.bt { 
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
 
-
-
-
-
-
-
-
+input.name, 
+input.price, 
+textarea.description{ 
+    width: 300px;
+}
 
 /* ProductList */
 
@@ -1074,19 +1097,19 @@ main article.pago div img{
 
 .main-empresa{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 20px auto;
     justify-content: space-between;
 }
 
 .main-empresa .img img{
-    width: 520px;
+    width: 100%;
 }
 div.text{
-    width: 500px;
+    width: 100%;
 } 
 .text h1 { 
-    font-size: 16px ;
+    font-size: 16px;
     margin-top:5px;
     margin-bottom: 14px;
     color:inherit;
@@ -1100,6 +1123,7 @@ div.text{
     font-weight: normal;
 }
 .text p { 
+    margin: 0px 5px;
     font-size: 13px;
     line-height: normal;
     margin-bottom: 15px;
@@ -1397,5 +1421,19 @@ div.text{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+    /* Empresa */
+    .main-empresa { 
+        flex-direction: row;
+    }
+
+    .main-empresa div.img,
+    .main-empresa div.text { 
+        width: 49%;
+    }
+
+    .text p { 
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
 }

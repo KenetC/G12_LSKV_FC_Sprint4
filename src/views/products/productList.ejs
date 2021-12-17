@@ -13,7 +13,7 @@
                     <% productList.forEach(element => { %>
                         
                             <article>
-                                <a href="/products/productDetail/<%= element.id  %> "><img src="/images/products/<%= element.img %>"></a>
+                                <a href="/products/productDetail/<%= element.id  %>"><img src="/images/products/<%= element.img %>"></a>
                                 <div class="descripcion">
                                 <h4> <%= element.nombre %> </h4>   
                                 <p class="cat"><%= element.categoria %> </p>
@@ -25,3 +25,4 @@
         </main>
         <%- include('../partials/footer') %> 
     </body>    
+</html>

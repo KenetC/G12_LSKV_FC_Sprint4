@@ -5,7 +5,7 @@
         "price": 100.000,
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
         "img": "img-ropa.jpeg",
-        "category": "ropa",
+        "category": "Blusas",
         "colours": ["red","black","olive","blue","goldenrod"],
         "sizes": ["XS","S","M","L","XL"],
         "stars": 3
@@ -16,7 +16,7 @@
         "price": 100.000,
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
         "img": "img-ropa.jpeg",
-        "category": "ropa",
+        "category": "Blusas",
         "colours": ["red","black","olive","blue","goldenrod"],
         "sizes": ["XS","S","M","L","XL"],
         "stars": 1
@@ -27,7 +27,7 @@
         "price": 100.000,
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
         "img": "img-ropa.jpeg",
-        "category": "ropa",
+        "category": "Remeras",
         "colours": ["red","black","olive","blue","goldenrod"],
         "sizes": ["XS","S","M","L","XL"],
         "stars": 1

@@ -55,27 +55,27 @@ const modelController =function(name){
             this.writeFile(updated); // lo guardo 
         },
 
-        filterForCategory: function(category){ 
+        filterForCategorys: function(categorys){ 
             let products = this.readFile();
             let filtered = products.filter(p => {
                 let entra = false 
-                for(let i=0; !entra & i < category.length;i++) entra = p.category == category[i];
+                for(let i=0; !entra & i < categorys.length;i++) entra = p.category == categorys[i];
                 return entra;
             });
             return filtered; 
-        },
-        // Busca por field al primer elemento de la DB que cumpla con las condiciones de la busqueda, devuelve 1 elemento
-        findFirstByField: function(field, text){
-            let rows = this.all();
-            let elementFound = rows.find(element => element[field] === text);
-            return elementFound;
-        },
-        // Busca por field a todos los elementos de la DB que cumplan con las condiciones de la busqueda, devuelve 1 array
-        findAllByField: function(field, text){
-            let rows = this.all();
-            let allElementsFound = rows.filter(element => element[field] === text);
-            return allElementsFound;
-        },
+        }
+        // // Busca por field al primer elemento de la DB que cumpla con las condiciones de la busqueda, devuelve 1 elemento
+        // findFirstByField: function(field, text){
+        //     let rows = this.all();
+        //     let elementFound = rows.find(element => element[field] === text);
+        //     return elementFound;
+        // },
+        // // Busca por field a todos los elementos de la DB que cumplan con las condiciones de la busqueda, devuelve 1 array
+        // findAllByField: function(field, text){
+        //     let rows = this.all();
+        //     let allElementsFound = rows.filter(element => element[field] === text);
+        //     return allElementsFound;
+        // },
 
 
     };

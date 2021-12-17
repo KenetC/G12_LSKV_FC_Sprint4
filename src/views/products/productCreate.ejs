@@ -12,67 +12,84 @@
                 <form action="/products/" method="POST" enctype="multipart/form-data">
                     <fieldset class="form-prod-char">
                         <legend class="legend-formulario">Crear producto</legend>
-
-                        <div>
-                            <label for="name">Nombre:
-                                <input type="text" id="name" name="name">
-                            </label>
-                        </div>
-
-                        <div>
-                            <label for="price">Precio:
-                                <input type="number" name="price" id="price">
-                            </label>
-                        </div>
-
-                        <div>
-                            <label for="description">Descripción: 
-                                <textarea name="description" id="description" cols="30" rows="5"></textarea>
-                            </label>
-                        </div>
-
-                        <div>
-                            <label for="image">Imagen:
-                                <input type="file" name="image" id="image">
-                            </label>
-                        </div>
                         
-                        <div>
-                            <label for="category">Categoria: 
-                                <select name="catedory" id="category">
-                                <option value="Blusas">Blusas</option>
-                                <option value="Remeras">Remeras</option>
-                                <option value="Vestidos">Vestidos</option>
-                                <option value="Monos">Monos</option>
-                                <option value="Shorts">Shorts</option>
-                                <option value="Faldas">Faldas</option>
-                                <option value="Jeans">Jeans</option>
-                                </select>
-                            </label>
+                        <label for="name">Nombre:
+                            <input type="text" id="name" name="name" class="name" required>
+                        </label>
+                        
+                        <label for="price">Precio:
+                            <input type="number" name="price" id="price" class="price" required>
+                        </label>
+                        
+                        <label for="category">Categoria: 
+                            <select name="catedory" id="category">
+                            <option value="Blusas">Blusas</option>
+                            <option value="Remeras">Remeras</option>
+                            <option value="Vestidos">Vestidos</option>
+                            <option value="Monos">Monos</option>
+                            <option value="Shorts">Shorts</option>
+                            <option value="Faldas">Faldas</option>
+                            <option value="Jeans">Jeans</option>
+                            </select>
+                         </label>
 
-                        </div>
                        
-                        <div>
-                            <label for="color">Colores: 
-                                <input type="color" id="color" name="color" >
-                            </label>
-                        </div>
-                        
-                        <div class="talle">
-                            <label for="sizes">Talles:
-                                <div class="checkbox-input">
-                                    <input name="sizes" id="sizes" type="checkbox" value="XS">XS
-                                    <input name="sizes" id="sizes" type="checkbox" value="S">S
-                                    <input name="sizes" id="sizes" type="checkbox" value="M">M
-                                    <input name="sizes" id="sizes" type="checkbox" value="L">L
-                                    <input name="sizes" id="sizes" type="checkbox" value="XL">XL
+                        <label for="color">Colores: 
+                            <div class="color">
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="red"> Rojo
                                 </div>
-                            </label>
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="blue"> Azul
+                                </div>
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="green"> Verde
+                                </div>
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="balck"> Negro
+                                </div>
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="white"> Blanco
+                                </div>
+                            </div>
+                        </label>
+                        
+                        <label for="sizes">Talles:
+                            <div class="checkbox-input">
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="XS"> XS
+                                </div>
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="S"> S
+                                </div>
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="M"> M
+                                </div>
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="L"> L
+                                </div>
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="XL"> XL
+                                </div>
+                            </div>
+                        </label>
+
+                        <label for="image">Imagen principal:
+                            <input type="file" name="image" id="image" required>
+                        </label>
+
+                        <label for="images">Imagenes secundarias:
+                            <input type="file" name="images" id="images">
+                        </label>
+
+                        <label for="description">Descripción: 
+                            <textarea name="description" id="description" cols="30" rows="5" class="description"></textarea>
+                        </label>
+
+                        <div class="bt">
+                            <input type="submit" value="Crear">
                         </div>
 
-                        <div>
-                            <input type="submit" value="Enviar">
-                        </div>
                     </fieldset>
                 </form>
             </div>
