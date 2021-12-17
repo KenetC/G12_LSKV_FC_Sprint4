@@ -49,7 +49,7 @@
         "price": 100.000,
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
         "img": "img-ropa.jpeg",
-        "category": "ropa",
+        "styles": "Trendy",
         "colours": ["red","black","olive","blue","goldenrod"],
         "sizes": ["XS","S","M","L","XL"],
         "stars": 4

@@ -23,10 +23,6 @@ const modelController =function(name){
             return (UltimoID ? ++UltimoID : 1);
         }, 
 
-        all: function(){
-            return this.readFile();
-        },
-
         find: function(id){ 
             const products = this.readFile(); 
             const product = products.find( prod => prod.id == id );
@@ -64,6 +60,11 @@ const modelController =function(name){
                 return entra;
             });
             return filtered; 
+        },
+        filterFroStyle: function(style){
+            let products = this.readFile(); 
+            let filtered = products.filter( p=> p.styles == style);
+            return filtered;
         }
         // // Busca por field al primer elemento de la DB que cumpla con las condiciones de la busqueda, devuelve 1 elemento
         // findFirstByField: function(field, text){

@@ -49,5 +49,16 @@
   "fNac": "3333-12-12",
   "image": "avatar-1639770475111.PNG",
   "id": 5
+ },
+ {
+  "user-name": "ItzViolento",
+  "password": "asdf",
+  "name": "Bruno",
+  "surname": "Chapeton",
+  "email": "brunochape@gmail.com",
+  "dni": 1312312312,
+  "fNac": "2008-06-23",
+  "image": "avatar-1639772261503.jpg",
+  "id": 6
  }
 ]

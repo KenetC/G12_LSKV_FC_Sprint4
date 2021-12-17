@@ -25,8 +25,6 @@ router.get('/create',productController.create);
 
 router.get('/edition',productController.edition)
 
-router.get('/:productId', productController.prodDetail );
-
 // mediante res query
 router.get('/filter', productController.filter);
 
@@ -34,6 +32,8 @@ router.get('/productCart' ,productController.prodCart1 );
 router.get('/productCart2',productController.prodCart2 );
 router.get('/productCart3',productController.prodCart3 );
 router.get('/productCart4',productController.prodCart4 );
+
+router.get('/:productId', productController.prodDetail );
 
 
 module.exports = router;

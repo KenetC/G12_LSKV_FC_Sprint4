@@ -685,6 +685,34 @@ main article.prod-detail p {
     margin: 0px 10px;
 }
 
+div.btn-detalle{
+    display: flex;
+    justify-content: center;
+}
+
+div.btn-detalle a { 
+    display: flex;
+    justify-content: center; 
+    display: grid;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    margin: 20px 5px;
+    background-color: #d8d7d773;
+
+}
+
+div.btn-detalle a.edit { 
+    width: 130px;
+    height: 40px;
+}
+
+div.btn-detalle a.delete {
+    width: 160px;
+    height: 40px;
+}
+
 /* ProductCharger */
 main.charger{
     display: flex;
@@ -756,7 +784,7 @@ main.productList .title{
 main.productList .title:before{
     content: "";
     position: absolute;
-    width: 200px;
+    width: 430px;
     height: 1px;
     bottom: 2px;
     border-bottom: 3px solid #BA135D;

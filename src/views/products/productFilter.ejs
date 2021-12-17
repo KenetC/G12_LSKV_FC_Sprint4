@@ -9,7 +9,13 @@
         <%- include('../partials/back') %>
 
         <main class="productList">
-            <h2 class="title"> Lista de productos filtrados por: <%=  %>  </h2>
+            <h2 class="title"> Lista de productos filtrados por:  <% Filtros.forEach((e,i,a) => { %> 
+                <% if (i == a.length - 1){ %>
+                    <%= e %> 
+                <%}else { %>
+                    <%=  e + " y "  %>
+                <%}});%> 
+            </h2>
             <section class="products">
                     <% productList.forEach(element => { %>
                         
@@ -18,9 +24,14 @@
                                     <img src="/images/products/<%= element.img %>">
                                 </a>
                                 <div class="descripcion">
-                                <h4> <%= element.nombre %> </h4>   
-                                <p class="cat"><%= element.categoria %> </p>
-                                <p class="precio">$<%= element.precio %> </p>
+                                <h4> <%= element.name %> </h4>   
+                                <% if(element.category != undefined ){ %> 
+                                    <p class="cat"><%= element.category %> </p>
+                                <% }else {%>
+                                    <p class="cat"> <%= element.styles %> </p>
+                                <% } %> 
+                                <p class="precio">$<%= element.price %> </p>
+
                                 </div>
                             </article>
 

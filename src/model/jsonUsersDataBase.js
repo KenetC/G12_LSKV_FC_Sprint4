@@ -24,10 +24,6 @@ const modelController =function(name){
             return (nextID ? ++nextID : 1);
         },
         
-        all: function () {
-            return this.readFile();
-        },
-        
         find: function (id) {
             let users = this.readFile();
             return users.find(i => i.id == id);

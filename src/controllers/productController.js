@@ -8,7 +8,7 @@ const productController = {
     },
     
     list: (req,res) => {
-        const productList = productModel.all();
+        const productList = productModel.readFile();
         return res.render('products/productList', { productList })
     },
 
@@ -21,17 +21,15 @@ const productController = {
     },
     
     filter: (req,res)=>{ 
-        let query = req.query; 
-        
-        // Antes que nada lo pasamos a array para mas comodidad: 
-        const categs = Object.values(query);
-
-        if(Object.keys(query).length >1 ){
-            const final = productModel.filterForCategorys(categs);
-            return res.send(final)
-        }else { 
-            return res.send(`${query}`)
+        const query = req.query; 
+        const aFiltrar = Object.values(query);
+        let filtrado;
+        if (Object.keys(query)[0].indexOf('styles') == 0 ){ 
+            filtrado = productModel.filterFroStyle(aFiltrar);
+        }else{
+            filtrado = productModel.filterForCategorys(aFiltrar);
         }
+        return res.render('products/productfilter',{productList: filtrado, Filtros: aFiltrar});
     },
 
     prodCart1: function(req,res) {
