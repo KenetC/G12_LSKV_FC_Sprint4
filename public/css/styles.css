@@ -1524,5 +1524,9 @@ div.text{
         margin-left: 0px;
         margin-right: 0px;
     }
-
+    /* Creacion de Producto */
+    main div form fieldset label textarea.description{
+        width: 550px;
+        height: 250px;
+    }
 }
