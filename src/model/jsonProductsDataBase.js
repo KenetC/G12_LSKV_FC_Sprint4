@@ -17,6 +17,10 @@ const modelController =function(name){
             fs.writeFileSync(this.tablePath, products);
         }, 
 
+        all:()=>{
+            return this.readFile();
+        },
+
         nextID: function(){
             const products = this.readFile(); 
             let UltimoID = products.length; 

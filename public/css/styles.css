@@ -245,6 +245,7 @@ footer{
 
 .footer-Top article.description p,
 .footer-Top .description h4{
+    color:grey;
     text-align: center;
 }
 
@@ -774,6 +775,7 @@ main.productList .products{
     margin: 10px;
 }
 
+main.productList .title2,
 main.productList .title{ 
     display: flex;
     position: relative;
@@ -781,13 +783,18 @@ main.productList .title{
     font-size: 25px;
     margin: 15px 0px 40px;
 }
+main.productList .title2:before,
 main.productList .title:before{
     content: "";
     position: absolute;
-    width: 430px;
+    width: 200px;
     height: 1px;
     bottom: 2px;
     border-bottom: 3px solid #BA135D;
+}
+
+main.productList .title2:before{
+    width: 430px;
 }
 
 main.productList .products  article{
@@ -882,6 +889,14 @@ div.description p.email {
     font-size: 13px;
 }
 
+main.usersList button.bt-delete{ 
+    width: 38px;
+    font-size: 8px;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
 /* Product car *//*titulo carrito con paso*/
 main section h4.title { 
     display: flex;
@@ -1250,6 +1265,9 @@ div.text{
 
     .footer-Buttom .newsletter .box{
         width: 220px;
+    }
+    div.icon-des i{ 
+        color:grey;
     }
     /* Home */
 

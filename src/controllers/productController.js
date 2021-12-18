@@ -15,6 +15,14 @@ const productController = {
     create: (req,res) => {
         return res.render("products/productCreate")
     },
+
+    store: (req,res)=>{
+        console.log('Entrando a Store del product Controller');
+        console.log(req.file);
+        console.log('Aca van las imagenes secundarias: ')
+        console.log(req.files); 
+        return res.send("Subidas"); 
+    },
     
     edition: (req,res) => {
         return res.render("products/productEdition")
@@ -31,7 +39,9 @@ const productController = {
         }
         return res.render('products/productfilter',{productList: filtrado, Filtros: aFiltrar});
     },
-
+    cambio: function(req,res){
+        
+    },
     prodCart1: function(req,res) {
         return res.render("products/productCart")
     },

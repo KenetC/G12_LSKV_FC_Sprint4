@@ -1,29 +1,22 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
+const storageSecu = require('../middlewares/imgs-products');
+const storagePrin = require('../middlewares/img-products');
+
 const multer = require('multer');
 
-
 const productController = require('../controllers/productController');
-
-var storage = multer.diskStorage({
-    destination: function (req, file, cb)
-    {
-      cb(null, path.join(__dirname,'../','../public/images/products') )  
-    },
-    filename:  function(req, file, cb){
-       cb(null, 'img' + "-" + Date.now() + path.extname(file.originalname) );
-    }
-})
-
-var  upload  =  multer ( { storage } );
+var uploadSecu = multer({ storageSecu });
+var uploadPrin = multer({ storagePrin });
 
 router.get('/', productController.list);
 
 router.get('/create',productController.create);
-// router.post('/',productController.store); 
-
-router.get('/edition',productController.edition)
+//router.post('/', uploadSecu.fields([{images:'images'}, {image:"image"}]) , productController.store); 
+router.post('/',uploadSecu.array('images',5), productController.store);
+//  router.get('/edition',productController.edition)
+//ruoter.put('/edition/:id',productController.cambio)
 
 // mediante res query
 router.get('/filter', productController.filter);

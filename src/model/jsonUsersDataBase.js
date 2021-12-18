@@ -17,7 +17,9 @@ const modelController =function(name){
             let tableContents = JSON.stringify(contents, null, ' '); // lo paso a JSON
             fs.writeFileSync(this.tablePath, tableContents); // paso tableContentes al DataBase
         },
-        
+        all:function(){
+            return this.readFile();
+        },
         nextId: function () {
             let users = this.readFile();
             let nextID = users.length;

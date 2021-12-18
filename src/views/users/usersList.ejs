@@ -22,11 +22,14 @@
                                     <% } %>   
                                 </a>
                                 <div class="description">
-                                <h4> <%= element['user-name'] %> </h4>   
-                                <p class="name"> <%=element.name %>  <%= element.surname %>  </p>
-                                <p class="email"> <%= element.email %> </p>
-                                <p class="birthday-date"><%= element.fNac %> </p>
+                                    <h4> <%= element['user-name'] %> </h4>   
+                                    <p class="name"> <%=element.name %>  <%= element.surname %>  </p>
+                                    <p class="email"> <%= element.email %> </p>
+                                    <p class="birthday-date"><%= element.fNac %> </p>
                                 </div>
+                                <form action="/users/<%=element.id%>?_method=DELETE" method="POST">
+                                    <button type="submit" class="bt-delete">ELIMINAR</button>
+                                </form>
                             </article>
 
                     <% }) %>

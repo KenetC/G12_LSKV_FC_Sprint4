@@ -10,47 +10,6 @@
   "fNac": "20-01-00"
  },
  {
-  "email": "kenetchape@gmail.com",
-  "password": "12sxsa",
-  "name": "Kenet",
-  "surname": "Chapeton",
-  "dni": "123",
-  "fNac": "0032-03-12",
-  "image": "avatar-1639601375405.PNG",
-  "id": 2
- },
- {
-  "email": "asd@gmail.com",
-  "password": "adfsd",
-  "name": "asd",
-  "surname": "asd",
-  "dni": "124124",
-  "fNac": "12312-03-21",
-  "image": "avatar-1639663812808.PNG",
-  "id": 3
- },
- {
-  "email": "lean@gmail.com",
-  "password": "qwer",
-  "name": "Lean",
-  "surname": "qwer",
-  "dni": "22222",
-  "fNac": "0012-03-12",
-  "image": "avatar-1639753177271.PNG",
-  "id": 4
- },
- {
-  "user-name": "Juan Pepe",
-  "password": "",
-  "name": "pepe",
-  "surname": "Apellido",
-  "email": "kenetchape@gmail.com",
-  "dni": 121,
-  "fNac": "3333-12-12",
-  "image": "avatar-1639770475111.PNG",
-  "id": 5
- },
- {
   "user-name": "ItzViolento",
   "password": "asdf",
   "name": "Bruno",
@@ -60,5 +19,27 @@
   "fNac": "2008-06-23",
   "image": "avatar-1639772261503.jpg",
   "id": 6
+ },
+ {
+  "user-name": "Sharon ",
+  "password": "asdf",
+  "name": "asd",
+  "surname": "afd",
+  "email": "asd@gmail.com",
+  "dni": 123041905,
+  "fNac": "2222-12-12",
+  "image": "avatar-1639791855881.PNG",
+  "id": 7
+ },
+ {
+  "user-name": "Tamii",
+  "password": "asdfasd",
+  "name": "Tamara",
+  "surname": "Chapeton",
+  "email": "tamarachapeton1525@gmail.com",
+  "dni": 39562972,
+  "fNac": "2222-02-12",
+  "image": "avatar-1639844496179.PNG",
+  "id": 5
  }
 ]
