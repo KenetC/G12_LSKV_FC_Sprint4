@@ -719,6 +719,14 @@ main.charger{
     justify-content: center;
 }
 
+main.charger div.edit{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 main div form{
     justify-content: center;
 }

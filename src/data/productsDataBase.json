@@ -1,10 +1,26 @@
 [
  {
-  "id": 1,
-  "name": "Nombre",
-  "price": 1200,
+  "id": "1",
+  "name": " blanca ",
+  "price": "150",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "stars": null
+  "img": "img-ropa.jpeg",
+  "category": "Blusas",
+  "colours": [
+   "red",
+   "black",
+   "olive",
+   "blue",
+   "goldenrod"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "stars": "1"
  },
  {
   "id": "2",
@@ -27,75 +43,75 @@
    "L",
    "XL"
   ],
-  "stars": 1
+  "stars": "1"
  },
  {
-  "id": 3,
-  "name": "Remera blanca con estampado",
-  "price": 100,
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "img": "img-ropa.jpeg",
-  "category": "Remeras",
-  "colours": [
-   "red",
-   "black",
-   "olive",
-   "blue",
-   "goldenrod"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "stars": 1
- },
- {
-  "id": 5,
-  "name": "Remera blanca con estampado",
-  "price": 100,
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "img": "img-ropa.jpeg",
-  "category": "ropa",
-  "colours": [
-   "red",
-   "black",
-   "olive",
-   "blue",
-   "goldenrod"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "stars": 3
- },
- {
-  "id": 5,
-  "name": "Remera blanca con estampado",
-  "price": 100,
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "img": "img-ropa.jpeg",
-  "styles": "Trendy",
-  "colours": [
-   "red",
-   "black",
-   "olive",
-   "blue",
-   "goldenrod"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "stars": 4
- }
+    "id": "3",
+    "name": " blanca ",
+    "price": "150",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
+    "img": "img-ropa.jpeg",
+    "category": "Blusas",
+    "colours": [
+     "red",
+     "black",
+     "olive",
+     "blue",
+     "goldenrod"
+    ],
+    "sizes": [
+     "XS",
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "stars": "1"
+   },
+   {
+    "id": "3",
+    "name": " blanca ",
+    "price": "150",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
+    "img": "img-ropa.jpeg",
+    "category": "Blusas",
+    "colours": [
+     "red",
+     "black",
+     "olive",
+     "blue",
+     "goldenrod"
+    ],
+    "sizes": [
+     "XS",
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "stars": "1"
+   },
+   {
+    "id": "4",
+    "name": " blanca ",
+    "price": "150",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
+    "img": "img-ropa.jpeg",
+    "category": "Blusas",
+    "colours": [
+     "red",
+     "black",
+     "olive",
+     "blue",
+     "goldenrod"
+    ],
+    "sizes": [
+     "XS",
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "stars": "1"
+   }
 ]
