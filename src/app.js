@@ -28,8 +28,6 @@ app.use( (req,res,next)=>{
     res.status(404).render('not-found');
 });
 
-
-
 app.listen (process.env.PORT || port, () =>{
     console.log(`Servidor funcionando en el puerto ${port}` )
 })

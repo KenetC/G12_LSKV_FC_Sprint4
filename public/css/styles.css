@@ -187,6 +187,7 @@ main.home section article{
 }
 main.home section article div{
     position: relative;
+    text-align: center;
 }
 
 main.home section article img{
