@@ -28,5 +28,4 @@ router.get('/productCart4',productController.prodCart4 );
 
 router.get('/:productId', productController.prodDetail );
 
-
 module.exports = router;

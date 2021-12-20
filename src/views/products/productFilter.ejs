@@ -6,8 +6,6 @@
     
         <%- include('../partials/header') %>
 
-        <%- include('../partials/back') %>
-
         <main class="productList">
             <h2 class="title2"> Lista de productos filtrados por:  <% Filtros.forEach((e,i,a) => { %> 
                 <% if (i == a.length - 1){ %>
@@ -20,7 +18,7 @@
                     <% productList.forEach(element => { %>
                         
                             <article>
-                                <a href="/products/productDetail/<%= element.id  %> ">
+                                <a href="/products/<%= element.id  %> ">
                                     <img src="/images/products/<%= element.img %>">
                                 </a>
                                 <div class="descripcion">

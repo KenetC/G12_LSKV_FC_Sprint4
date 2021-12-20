@@ -10,17 +10,6 @@
   "fNac": "20-01-00"
  },
  {
-  "user-name": "ItzViolento",
-  "password": "asdf",
-  "name": "Bruno",
-  "surname": "Chapeton",
-  "email": "brunochape@gmail.com",
-  "dni": 1312312312,
-  "fNac": "2008-06-23",
-  "image": "avatar-1639772261503.jpg",
-  "id": 6
- },
- {
   "user-name": "Sharon ",
   "password": "asdf",
   "name": "asd",
@@ -30,16 +19,5 @@
   "fNac": "2222-12-12",
   "image": "avatar-1639791855881.PNG",
   "id": 7
- },
- {
-  "user-name": "Tamii",
-  "password": "asdfasd",
-  "name": "Tamara",
-  "surname": "Chapeton",
-  "email": "tamarachapeton1525@gmail.com",
-  "dni": 39562972,
-  "fNac": "2222-02-12",
-  "image": "avatar-1639844496179.PNG",
-  "id": 5
  }
 ]
