@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = process.env.PORT || 3000;
+const port = 3000;
 const methodOverride = require('method-override');
 
 app.set('view engine','ejs'); // Para "activar" ejs 
@@ -30,6 +30,6 @@ app.use( (req,res,next)=>{
 
 
 
-app.listen (port, () =>{
+app.listen (process.env.PORT || port, () =>{
     console.log(`Servidor funcionando en el puerto ${port}` )
 })
