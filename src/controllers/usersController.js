@@ -39,6 +39,7 @@ const usersController = {
 		const users = userModel.all(); 
 		res.render('users/usersList',{users});
 	}
+   
 }
 
 module.exports = usersController;

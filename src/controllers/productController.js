@@ -25,9 +25,27 @@ const productController = {
     },
     
     edition: (req,res) => {
-        return res.render("products/productEdition")
+        let product=productModel.find(req.params.id);
+
+        return res.render("products/productEdition", {product})
     },
-    
+    prodEdition: (req,res)=>{
+      let products= productModel.find(req.params.id)
+       let productBody={
+           id: req.params.id,
+           name: req.body.name ,
+           price:req.body.price ,
+           description: req.body.description ,
+           img: products.img,
+           category:products.category,
+           colours: products.colours,
+           sizes: products.sizes,
+           stars: products.stars,
+       };
+     
+       productModel.update(productBody);
+       res.redirect("/products")
+    },
     filter: (req,res)=>{ 
         const query = req.query; 
         const aFiltrar = Object.values(query);
