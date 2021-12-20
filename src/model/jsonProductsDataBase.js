@@ -44,7 +44,7 @@ const modelController =function(name){
         update: function(product){
             let products = this.readFile(); 
             let update = products.map(prod=>{
-                (prod.id == product.id ? product : prod);  
+               return (product.id == prod.id ? product : prod);
             });
             this.writeFile(update);
             return product.id; 

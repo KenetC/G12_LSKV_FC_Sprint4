@@ -22,7 +22,7 @@ const usersController = {
 			aCrear.dni = Number(aCrear.dni);
 			aCrear.image = req.file.filename;
 			let aCrearID = userModel.create(aCrear);
-			res.redirect(`/users`);
+			res.redirect(`/users/${aCrearID}`);
 		}else { 
 			const error = new Error('Hubo un error intente nuevamente!')
 			return next(error)
@@ -39,6 +39,7 @@ const usersController = {
 		const users = userModel.all(); 
 		res.render('users/usersList',{users});
 	}
+   
 }
 
 module.exports = usersController;
