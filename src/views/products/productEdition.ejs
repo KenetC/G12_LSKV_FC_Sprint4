@@ -15,17 +15,17 @@
 
                         <div>
                             <label for="">Nombre</label>
-                            <input type="text">
+                            <input type="text" id = "name" value ="<%= product.name %> " >
                         </div>
 
                         <div>
                             <label for="">Precio</label>
-                            <input type="number">
+                            <input type="number" id="price" name="price" value="<%= product.price %> ">
                         </div>
 
                         <div>
                             <label for="">Descripción</label>
-                            <textarea name="" id="" cols="30" rows="5"></textarea>
+                            <textarea name="description" id="description" cols="30" rows="5"><%= product.description %> </textarea>
                         </div>
 
                         <div>
