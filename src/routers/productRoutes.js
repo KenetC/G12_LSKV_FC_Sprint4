@@ -32,4 +32,6 @@ router.get('/:productId', productController.prodDetail );
 router.put("/:id/edit", productController.prodEdition);
 router.get("/:id/edit", productController.edition);
 
+router.delete('/:id', productController.destroy);
+
 module.exports = router;

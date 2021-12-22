@@ -4,8 +4,9 @@ const categories = ["Blusas", "Remeras", "Vestidos", "Monos", "Shorts", "Faldas"
 
 const productController = {
     prodDetail: (req,res) =>{
-        let productC = productModel.find(req.params.productId)
-        return res.render("products/productDetail",{ product: productC })    
+        let product = productModel.find(req.params.productId)
+        const productList = productModel.readFile();
+        return res.render("products/productDetail",{ product,productList })    
     },
     
     list: (req,res) => {
@@ -88,6 +89,12 @@ const productController = {
     
     prodCart4: function(req,res) {
         return res.render("products/productCart4")
+    },
+    destroy: (req, res) =>{
+        //let product = productModel.find(req.params.id)
+		//fs.unlinkSynk(path.join(__dirname,'../','../public/images/products','${product.image}'))
+		productModel.delete(req.params.id);
+		res.redirect('/products');
     }
 }
 

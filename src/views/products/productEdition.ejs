@@ -5,69 +5,96 @@
     <body>
     
         <%- include('../partials/header') %>
-
-        <%- include('../partials/back') %>
         <main class="charger">
             <div>
                 <form action="?_method=PUT" method="POST">
                     <fieldset class="form-prod-char">
                         <legend class="legend-formulario">Editar producto</legend>
-
-                        <div>
-                            <label for="name">Nombre</label>
-                            <input type="text" id = "name" value="<%=product.name %>" name="name">
-                        </div>
-
-                        <div>
-                            <label for="price">Precio</label>
-                            <input type="number" id="price" name="price" value="<%=product.price %>">
-                        </div>
-
-                        <div>
-                            <label for="description">Descripción</label>
-                            <textarea name="description" id="description" cols="30" rows="5"><%=product.description%></textarea>
-                        </div>
-
-                        <div>
-                            <label for="">Imagen</label>
-                            <input type="file">
-                        </div>
                         
-                        <div>
-                            <label for="">Categoria </label>
-                            <select name="about" id="">
-                                <option value="Blusas">Blusas</option>
-                                <option value="Remeras">Remeras</option>
-                                <option value="Vestidos">Vestidos</option>
-                                <option value="Monos">Monos</option>
-                                <option value="Shorts">Shorts</option>
-                                <option value="Faldas">Faldas</option>
-                                <option value="Jeans">Jeans</option>
+                        <label for="name">Nombre
+                            <input type="text" id = "name" value="<%=product.name %>" name="name">
+                        </label>
+                            
+                        
+                        <label for="price">Precio
+                            <input type="number" id="price" name="price" value="<%=product.price %>">
+                        </label>
+                        
+                        
+                        <label for="category">Categoria: 
+                            <select name="catedory" id="category">
+                            <option value="Blusas">Blusas</option>
+                            <option value="Remeras">Remeras</option>
+                            <option value="Vestidos">Vestidos</option>
+                            <option value="Monos">Monos</option>
+                            <option value="Shorts">Shorts</option>
+                            <option value="Faldas">Faldas</option>
+                            <option value="Jeans">Jeans</option>
                             </select>
-                        </div>
+                         </label>
+
                        
-                        <div>
-                            <label for="">Color</label>
-                            <input type="color">
-                        </div>
-
-                        <div class="talle">
-                            <label for="">Talle</label>
-                            <div class="checkbox-input">
-                                <input type="checkbox">XS
-                                <input type="checkbox">S
-                                <input type="checkbox">M
-                                <input type="checkbox">L
-                                <input type="checkbox">XL
+                        <label for="color">Colores: 
+                            <div class="color">
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="red"> Rojo
+                                </div>
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="blue"> Azul
+                                </div>
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="green"> Verde
+                                </div>
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="balck"> Negro
+                                </div>
+                                <div class="check-c-s">
+                                    <input type="checkbox" is="color" value="white"> Blanco
+                                </div>
                             </div>
-                        </div>
+                        </label>
+                        
+                        <label for="sizes">Talles:
+                            <div class="checkbox-input">
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="XS"> XS
+                                </div>
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="S"> S
+                                </div>
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="M"> M
+                                </div>
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="L"> L
+                                </div>
+                                <div class="check-c-s">
+                                    <input name="sizes" id="sizes" type="checkbox" value="XL"> XL
+                                </div>
+                            </div>
+                        </label>
 
-                        <div>
+                        <label for="image">Imagen principal:
+                            <input type="file" name="image" id="image" >
+                        </label>
+
+                        <label for="images">Imagenes secundarias:
+                            <input type="file" name="images" id="images">
+                        </label>
+
+                        <label for="description">Descripción: 
+                            <textarea name="description" id="description" cols="30" rows="5" class="description"><%=product.description%></textarea>
+                        </label>
+
+                        <div class="bt">
                             <input type="submit" value="Publicar">
                         </div>
+
                     </fieldset>
                 </form>
             </div>
         </main>
+
+
         <%- include('../partials/footer') %> 
     </body>  
