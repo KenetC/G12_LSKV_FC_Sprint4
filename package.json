@@ -15,5 +15,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KenetC/G12_LSKV_FC_Sprint4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KenetC/G12_LSKV_FC_Sprint4/issues"
+  },
+  "homepage": "https://github.com/KenetC/G12_LSKV_FC_Sprint4#readme"
 }

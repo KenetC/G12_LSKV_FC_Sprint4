@@ -53,72 +53,82 @@
   "stars": "1"
  },
  {
-    "id": "3",
-    "name": " blanca ",
-    "price": "150",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-    "img": "img-ropa.jpeg",
-    "category": "Blusas",
-    "colours": [
-     "red",
-     "black",
-     "olive",
-     "blue",
-     "goldenrod"
-    ],
-    "sizes": [
-     "XS",
-     "S",
-     "M",
-     "L",
-     "XL"
-    ],
-    "stars": "1"
-   },
-   {
-    "id": "3",
-    "name": " blanca ",
-    "price": "150",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-    "img": "img-ropa.jpeg",
-    "category": "Blusas",
-    "colours": [
-     "red",
-     "black",
-     "olive",
-     "blue",
-     "goldenrod"
-    ],
-    "sizes": [
-     "XS",
-     "S",
-     "M",
-     "L",
-     "XL"
-    ],
-    "stars": "1"
-   },
-   {
-    "id": "4",
-    "name": " blanca ",
-    "price": "150",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-    "img": "img-ropa.jpeg",
-    "category": "Blusas",
-    "colours": [
-     "red",
-     "black",
-     "olive",
-     "blue",
-     "goldenrod"
-    ],
-    "sizes": [
-     "XS",
-     "S",
-     "M",
-     "L",
-     "XL"
-    ],
-    "stars": "1"
-   }
+  "id": "3",
+  "name": " blanca ",
+  "price": "150",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
+  "img": "img-ropa.jpeg",
+  "category": "Blusas",
+  "colours": [
+   "red",
+   "black",
+   "olive",
+   "blue",
+   "goldenrod"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "stars": "1"
+ },
+ {
+  "id": "3",
+  "name": " blanca ",
+  "price": "150",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
+  "img": "img-ropa.jpeg",
+  "category": "Blusas",
+  "colours": [
+   "red",
+   "black",
+   "olive",
+   "blue",
+   "goldenrod"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "stars": "1"
+ },
+ {
+  "id": "4",
+  "name": " blanca ",
+  "price": "150",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
+  "img": "img-ropa.jpeg",
+  "category": "Blusas",
+  "colours": [
+   "red",
+   "black",
+   "olive",
+   "blue",
+   "goldenrod"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "stars": "1"
+ },
+ {
+  "name": "asdf",
+  "price": 222,
+  "description": "adfasd",
+  "stars": 0,
+  "colours": "red",
+  "sizes": "XS",
+  "category": "Blusas",
+  "id": 7
+ }
 ]
