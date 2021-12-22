@@ -19,10 +19,23 @@ const productController = {
 
     store: (req,res)=>{
         console.log('Entrando a Store del product Controller');
+        console.log('Va el req.file: ')
         console.log(req.file);
-        console.log('Aca van las imagenes secundarias: ')
-        console.log(req.files); 
-        return res.send("Subidas"); 
+        console.log('Va req.files: ')
+        console.log(req.files);
+        console.log('Aca va el BODY: ')
+        console.log(req.body);
+        let aCrear = {
+            name: req.body.name,
+            price: Number(req.body.price),
+            description: req.body.description, 
+            stars: 0,
+            colours: req.body.color, 
+            sizes:req.body.sizes,
+            category: req.body.category
+        };
+        productModel.create(aCrear);
+        return res.send(aCrear); 
     },
     
     edition: (req,res) => {

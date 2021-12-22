@@ -10,5 +10,6 @@ var storageUsers = multer.diskStorage({
     }
 });
 
+var upload = multer({storageUsers});
 
-module.exports = storageUsers; 
+module.exports = upload; 

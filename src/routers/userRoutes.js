@@ -4,7 +4,7 @@ const multer = require('multer');
 const storage = require('../middlewares/img-users'); 
 
 const usersController = require('../controllers/usersController.js');
-const upload = multer({ storage });
+const upload = require('../middlewares/img-users');
 
 router.get('/', usersController.list); 
 router.delete('/:id',usersController.delete );

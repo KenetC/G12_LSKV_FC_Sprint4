@@ -1,21 +1,21 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const storageSecu = require('../middlewares/imgs-products');
-const storagePrin = require('../middlewares/img-products');
 
 const multer = require('multer');
 
+var upload = require('../middlewares/img-products');
+var uploadM = require('../middlewares/imgs-products');
+
 const productController = require('../controllers/productController');
-var uploadSecu = multer({ storageSecu });
-var uploadPrin = multer({ storagePrin });
 
 router.get('/', productController.list);
 
 router.get('/create',productController.create);
 //router.post('/', uploadSecu.fields([{images:'images'}, {image:"image"}]) , productController.store); 
-router.post('/',uploadSecu.array('images',5), productController.store);
-//  router.get('/edition',productController.edition)
+
+router.post('/', upload.single('image'), productController.store);
+//router.post('/', [upload.single('image'),uploadM.array('images')], productController.store);
 //ruoter.put('/edition/:id',productController.cambio)
 
 // mediante res query

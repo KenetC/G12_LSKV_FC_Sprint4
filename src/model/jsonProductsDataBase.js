@@ -17,7 +17,7 @@ const modelController =function(name){
             fs.writeFileSync(this.tablePath, products);
         }, 
 
-        all:()=>{
+        all:function(){
             return this.readFile();
         },
 
@@ -36,13 +36,14 @@ const modelController =function(name){
         create: function(product){
             let products = this.readFile(); 
             product.id = this.nextID(); 
+            console.log(product);
             products.push(products); 
             this.writeFile(products); 
             return product.id;
         }, 
 
         update: function(product){
-            let products = this.readFile(); 
+            let products = this.all(); 
             let update = products.map(prod=>{
                return (product.id == prod.id ? product : prod);
             });
@@ -51,7 +52,7 @@ const modelController =function(name){
         },
 
         delete: function (id) {
-            let products = this.readFile();
+            let products = this.all();
             let updated = products.filter(product => product.id != id);
             this.writeFile(updated); // lo guardo 
         },

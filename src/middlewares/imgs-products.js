@@ -10,5 +10,6 @@ var storageProd = multer.diskStorage({
        cb(null, 'imgs' + "-" + Date.now() + path.extname(file.originalname) );
     }
 });
+var upload = multer({storageProd});
 
-module.exports = storageProd; 
+module.exports = upload; 
