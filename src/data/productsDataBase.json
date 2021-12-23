@@ -120,5 +120,22 @@
    "XL"
   ],
   "stars": "1"
+ },
+ {
+  "name": "Musculosa",
+  "price": 20000,
+  "description": "sdasdasdasd",
+  "stars": 0,
+  "colours": [
+   "blue",
+   "green"
+  ],
+  "sizes": [
+   "XS",
+   "S"
+  ],
+  "category": "Remeras",
+  "img": "img-1640223223584.jpg",
+  "id": 7
  }
 ]

@@ -33,10 +33,11 @@ const productController = {
             stars: 0,
             colours: req.body.color, 
             sizes:req.body.sizes,
-            category: req.body.category
+            category: req.body.category,
+            img: req.file.filename
         };
         productModel.create(aCrear);
-        return res.send(aCrear); 
+        return res.redirect('/products'); 
     },
     
     edition: (req,res) => {
