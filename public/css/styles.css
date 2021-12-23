@@ -41,14 +41,12 @@ div.IngresarRegistrarse a{
 /* LOCALES */
 main.locales div div .local-maps{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 }
 
-main.locales div div div .local-sucur{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+main.locales div div div .text-local{
+    margin: 20px 0px 35px 0px;
 }
 
 main.locales div div .title{ 
@@ -68,9 +66,14 @@ main.locales div div .title:before{
     border-bottom: 3px solid #BA135D;
 }
 
-main.locales div div div .descrip-local{
+main.locales div div .descrip-local{
     margin-bottom: 27px;
 }
+
+main.locales div div div div div .descripcion{
+    font-size: 13px;
+}
+
 
 
 /*CONTACTO*/
@@ -1479,6 +1482,10 @@ div.text{
         display: flex;
         flex-wrap: wrap;
     }
+
+    /*Local*/
+    
+    
 }
 
 @media (min-width: 700px){
@@ -1675,4 +1682,23 @@ div.text{
         width: 550px;
         height: 250px;
     }
+
+}
+
+@media (min-width: 808px){
+    /*Local*/
+    main.locales div div .local-maps{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 808px){
+    main.locales div div .local-maps{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
