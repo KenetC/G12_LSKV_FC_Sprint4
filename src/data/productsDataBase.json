@@ -1,12 +1,5 @@
 [
  {
-  "id": 1,
-  "name": "Nombre",
-  "price": 1200,
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "stars": 2
- },
- {
   "id": 2,
   "name": " blanca ",
   "price": 150,
