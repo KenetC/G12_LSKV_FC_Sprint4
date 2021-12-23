@@ -78,6 +78,10 @@ main.locales div div div div div .descripcion{
 
 /*CONTACTO*/
 
+main.contact{
+    text-align: center;
+}
+
 main.contact h1.title{ 
     display: flex;
     position: relative;
