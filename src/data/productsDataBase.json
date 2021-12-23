@@ -130,5 +130,189 @@
   "category": "Remeras",
   "img": "img-1640223223584.jpg",
   "id": 7
+ },
+ {
+  "name": "Blusa de tela",
+  "price": 800,
+  "description": "",
+  "stars": 0,
+  "colours": [
+   "red",
+   "blue",
+   "green",
+   "balck",
+   "white"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "category": "Blusas",
+  "img": "img-1640227253536.PNG",
+  "id": 7
+ },
+ {
+  "name": "Short",
+  "price": 1000,
+  "description": "",
+  "stars": 0,
+  "colours": [
+   "red",
+   "blue",
+   "green",
+   "balck",
+   "white"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "category": "Shorts",
+  "img": "img-1640227305058.PNG",
+  "id": 8
+ },
+ {
+  "name": "Blusa ",
+  "price": 800,
+  "description": "",
+  "stars": 0,
+  "colours": [
+   "red",
+   "blue",
+   "green",
+   "balck",
+   "white"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "category": "Blusas",
+  "img": "img-1640227389597.PNG",
+  "id": 9
+ },
+ {
+  "name": "Vestido",
+  "price": 1800,
+  "description": "",
+  "stars": 0,
+  "colours": [
+   "red",
+   "blue",
+   "green",
+   "balck",
+   "white"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "category": "Vestidos",
+  "img": "img-1640227460128.PNG",
+  "id": 10
+ },
+ {
+  "name": "Vestido",
+  "price": 1800,
+  "description": "",
+  "stars": 0,
+  "colours": [
+   "red",
+   "blue",
+   "green",
+   "balck",
+   "white"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "category": "Vestidos",
+  "img": "img-1640227541669.PNG",
+  "id": 11
+ },
+ {
+  "name": "Short",
+  "price": 1000,
+  "description": "",
+  "stars": 0,
+  "colours": [
+   "red",
+   "blue",
+   "green",
+   "balck",
+   "white"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "category": "Blusas",
+  "img": "img-1640227607064.PNG",
+  "id": 12
+ },
+ {
+  "name": "Jean",
+  "price": 1300,
+  "description": "",
+  "stars": 0,
+  "colours": [
+   "red",
+   "blue",
+   "green",
+   "balck",
+   "white"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "category": "Jeans",
+  "img": "img-1640227664100.PNG",
+  "id": 13
+ },
+ {
+  "name": "Jean",
+  "price": 1300,
+  "description": "",
+  "stars": 0,
+  "colours": [
+   "red",
+   "blue",
+   "green",
+   "balck",
+   "white"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ],
+  "category": "Jeans",
+  "img": "img-1640227734884.PNG",
+  "id": 14
  }
 ]
