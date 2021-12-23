@@ -29,15 +29,14 @@ const modelController =function(name){
 
         find: function(id){ 
             const products = this.readFile(); 
-            const product = products.find( prod => prod.id == id );
-            return product;
+            return  products.find( prod => prod.id == id );
         }, 
 
         create: function(product){
             let products = this.readFile(); 
             product.id = this.nextID(); 
             console.log(product);
-            products.push(products); 
+            products.push(product); 
             this.writeFile(products); 
             return product.id;
         }, 
