@@ -55,7 +55,8 @@ main.locales div div .title{
     display: flex;
     position: relative;
     justify-content:center;
-    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
     margin: 15px 0px 40px;
 }
 main.locales div div .title:before{
@@ -78,7 +79,8 @@ main.contact h1.title{
     display: flex;
     position: relative;
     justify-content:center;
-    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
     margin: 15px 0px 40px;
 }
 
@@ -899,7 +901,8 @@ main.productList .title{
     display: flex;
     position: relative;
     justify-content:center;
-    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
     margin: 15px 0px 40px;
 }
 main.productList .title2:before,
