@@ -1,6 +1,7 @@
 const jsonDB = require('../model/jsonProductsDataBase');
 const productModel = jsonDB('productsDataBase');
 const categories = ["Blusas", "Remeras", "Vestidos", "Monos", "Shorts", "Faldas", "Jeans"];
+const log = console.log; 
 
 const productController = {
     prodDetail: (req,res) =>{
@@ -69,7 +70,7 @@ const productController = {
         if (Object.keys(query)[0].indexOf('styles') == 0 ){ 
             filtrado = productModel.filterFroStyle(aFiltrar);
         }else{
-            filtrado = productModel.filterForCategorys(aFiltrar);
+            filtrado = productModel.filterForCategories(aFiltrar);
         }
         return res.render('products/productfilter',{productList: filtrado, Filtros: aFiltrar});
     },

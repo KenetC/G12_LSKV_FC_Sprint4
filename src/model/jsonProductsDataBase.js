@@ -56,11 +56,11 @@ const modelController =function(name){
             this.writeFile(updated); // lo guardo 
         },
 
-        filterForCategorys: function(categorys){ 
+        filterForCategories: function(categories){ 
             let products = this.readFile();
             let filtered = products.filter(p => {
                 let entra = false 
-                for(let i=0; !entra & i < categorys.length;i++) entra = p.category == categorys[i];
+                for(let i=0; !entra & i < categories.length;i++) entra = p.category == categories[i];
                 return entra;
             });
             return filtered; 
