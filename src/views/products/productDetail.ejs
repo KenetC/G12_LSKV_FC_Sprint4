@@ -86,7 +86,7 @@
                     </div>   
 
                     <div class = "description">
-                        <p class="title"> Descripción</p>
+                        <p class="title"> Descripción:</p>
                         <p class="content"> <%= product.description %> 
                         </p>
                     </div>
@@ -113,11 +113,10 @@
                         <a href="/products/<%= productList[index].id  %>">
                             <img src = "/images/products/<%= productList[index].img %>">
                         </a>
-                        <p><%= productList[index].name %> </p>
-                        <p>$<%= productList[index].price %> </p>
+                        <p class="name"><%= productList[index].name %> </p>
+                        <p class="price">$<%= productList[index].price %> </p>
                     </article>
                 <% } %>
-                
                
             </div>
 

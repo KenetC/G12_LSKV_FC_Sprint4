@@ -1,164 +1,9 @@
 [
  {
-  "id": 2,
-  "name": " blanca ",
-  "price": 150,
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "img": "img-ropa.jpeg",
-  "category": "Blusas",
-  "colours": [
-   "red",
-   "black",
-   "olive",
-   "blue",
-   "goldenrod"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "stars": "1"
- },
- {
-  "id": 4,
-  "name": "Remera blanca con estampado",
-  "price": 100,
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "img": "img-ropa.jpeg",
-  "category": "Blusas",
-  "colours": [
-   "red",
-   "black",
-   "olive",
-   "blue",
-   "goldenrod"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "stars": "1"
- },
- {
-  "id": "3",
-  "name": " blanca ",
-  "price": "150",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "img": "img-ropa.jpeg",
-  "category": "Blusas",
-  "colours": [
-   "red",
-   "black",
-   "olive",
-   "blue",
-   "goldenrod"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "stars": "1"
- },
- {
-  "id": "3",
-  "name": " blanca ",
-  "price": "150",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "img": "img-ropa.jpeg",
-  "category": "Blusas",
-  "colours": [
-   "red",
-   "black",
-   "olive",
-   "blue",
-   "goldenrod"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "stars": "1"
- },
- {
-  "id": "4",
-  "name": " blanca ",
-  "price": "150",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ipsa amet quaerat sed rem veritatis, cumque eaque natus aperiam, perferendis quibusdam neque harum itaque consequuntur dicta a voluptate maxime",
-  "img": "img-ropa.jpeg",
-  "category": "Blusas",
-  "colours": [
-   "red",
-   "black",
-   "olive",
-   "blue",
-   "goldenrod"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "stars": "1"
- },
- {
-  "name": "Musculosa",
-  "price": 20000,
-  "description": "sdasdasdasd",
-  "stars": 0,
-  "colours": [
-   "blue",
-   "green"
-  ],
-  "sizes": [
-   "XS",
-   "S"
-  ],
-  "category": "Remeras",
-  "img": "img-1640223223584.jpg",
-  "id": 7
- },
- {
-  "name": "Blusa de tela",
-  "price": 800,
-  "description": "",
-  "stars": 0,
-  "colours": [
-   "red",
-   "blue",
-   "green",
-   "balck",
-   "white"
-  ],
-  "sizes": [
-   "XS",
-   "S",
-   "M",
-   "L",
-   "XL"
-  ],
-  "category": "Blusas",
-  "img": "img-1640227253536.PNG",
-  "id": 7
- },
- {
   "name": "Short",
   "price": 1000,
   "description": "",
-  "stars": 0,
+  "stars": 5,
   "colours": [
    "red",
    "blue",
@@ -181,7 +26,7 @@
   "name": "Blusa ",
   "price": 800,
   "description": "",
-  "stars": 0,
+  "stars": 3,
   "colours": [
    "red",
    "blue",
@@ -204,7 +49,7 @@
   "name": "Vestido",
   "price": 1800,
   "description": "",
-  "stars": 0,
+  "stars": 2,
   "colours": [
    "red",
    "blue",
@@ -227,7 +72,7 @@
   "name": "Vestido",
   "price": 1800,
   "description": "",
-  "stars": 0,
+  "stars": 1,
   "colours": [
    "red",
    "blue",
@@ -247,10 +92,12 @@
   "id": 11
  },
  {
+  "id": 12,
   "name": "Short",
   "price": 1000,
   "description": "",
-  "stars": 0,
+  "img": "img-1640227607064.PNG",
+  "category": "Shorts",
   "colours": [
    "red",
    "blue",
@@ -265,9 +112,7 @@
    "L",
    "XL"
   ],
-  "category": "Blusas",
-  "img": "img-1640227607064.PNG",
-  "id": 12
+  "stars": 4
  },
  {
   "name": "Jean",
@@ -296,7 +141,7 @@
   "name": "Jean",
   "price": 1300,
   "description": "",
-  "stars": 0,
+  "stars": 6,
   "colours": [
    "red",
    "blue",
