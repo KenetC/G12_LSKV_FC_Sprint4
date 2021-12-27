@@ -7,7 +7,7 @@ var storageProd = multer.diskStorage({
       cb(null, path.join(__dirname,'../','../public/images/products') )  
     },
     filename:  function(req, file, cb){
-       cb(null, 'imgs' + "-" + Date.now() + path.extname(file.originalname) );
+       cb(null, 'img' + "-" + Date.now() + path.extname(file.originalname) );
     }
 });
 var upload = multer({storageProd});

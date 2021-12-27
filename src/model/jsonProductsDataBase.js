@@ -82,8 +82,6 @@ const modelController =function(name){
         //     let allElementsFound = rows.filter(element => element[field] === text);
         //     return allElementsFound;
         // },
-
-
     };
 };
 

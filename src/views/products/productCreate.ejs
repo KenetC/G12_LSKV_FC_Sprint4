@@ -41,7 +41,7 @@
                                     <input type="checkbox" is="color" value="green" name="color"> Verde
                                 </div>
                                 <div class="check-c-s">
-                                    <input type="checkbox" is="color" value="balck" name="color"> Negro
+                                    <input type="checkbox" is="color" value="black" name="color"> Negro
                                 </div>
                                 <div class="check-c-s">
                                     <input type="checkbox" is="color" value="white" name="color"> Blanco
@@ -70,14 +70,16 @@
 
                         <label for="image"> Ingrese una imagen:
                             <input type="file" id="image" name="image" required>
-                        <!--
-                            <label for="images">Imagenes secundarias:</label>
-                            <input type="file" name="images" id="images">
-                        -->
-                         </label>
-                        <label for="description">Descripción:
+                        </label>
+                        
+                        <label for="images">Imagenes secundarias:
+                            <input type="file" name="images" id="images" require multiple>
+                        </label>
+                            
+                         <label for="description">Descripción:
                             <textarea name="description" id="description" cols="30" rows="5" class="description"></textarea>
                          </label> 
+
                         <div class="bt">
                             <button type="submit">Crear</button>
                         </div>

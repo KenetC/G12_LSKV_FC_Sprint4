@@ -14,9 +14,8 @@ router.get('/', productController.list);
 router.get('/create',productController.create);
 //router.post('/', uploadSecu.fields([{images:'images'}, {image:"image"}]) , productController.store); 
 
-router.post('/', upload.single('image'), productController.store);
+router.post('/',upload.fields([{name: 'image'},{name: 'images'}]), productController.store);
 //router.post('/', [upload.single('image'),uploadM.array('images')], productController.store);
-//ruoter.put('/edition/:id',productController.cambio)
 
 // mediante res query
 router.get('/filter', productController.filter);

@@ -10,7 +10,7 @@
             <article class="prod-detail">
                 <div class="img-container">
                     <div class="img-principal">
-                        <img src = "/images/products/<%= product.img %> ">
+                        <img src = "/images/products/<%= product['img-pr'] %> ">
                     </div>
 
                     <div class="slider-buttons-container"> 
@@ -22,13 +22,12 @@
                         </div> 
                     </div>
                     
-                    <div class="img-sec">
-                        <img src = "/images/products/<%= product.img %>" >
-                    </div>
+                    <% product['img-se'].forEach(img => { %>
+                        <div class="img-sec">
+                            <img src = "/images/products/<%=img%>">
+                        </div>    
+                    <% }); %> 
                     
-                    <div class="img-sec">
-                        <img src = "/images/products/<%= product.img %>" >
-                    </div>
                 </div>
 
                 <div class="product-description">
@@ -111,7 +110,7 @@
                 <% for( let index = 0; index < 4; index++ ) { %>
                     <article>
                         <a href="/products/<%= productList[index].id  %>">
-                            <img src = "/images/products/<%= productList[index].img %>">
+                            <img src = "/images/products/<%= productList[index]['img-pr'] %>">
                         </a>
                         <p class="name"><%= productList[index].name %> </p>
                         <p class="price">$<%= productList[index].price %> </p>

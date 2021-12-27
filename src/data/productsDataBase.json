@@ -8,7 +8,7 @@
    "red",
    "blue",
    "green",
-   "balck",
+   "black",
    "white"
   ],
   "sizes": [
@@ -19,8 +19,8 @@
    "XL"
   ],
   "category": "Shorts",
-  "img": "img-1640227305058.PNG",
-  "id": 8
+  "img-pr": "img-1640227305058.PNG",
+  "id": 1
  },
  {
   "name": "Blusa ",
@@ -31,7 +31,7 @@
    "red",
    "blue",
    "green",
-   "balck",
+   "black",
    "white"
   ],
   "sizes": [
@@ -42,8 +42,8 @@
    "XL"
   ],
   "category": "Blusas",
-  "img": "img-1640227389597.PNG",
-  "id": 9
+  "img-pr": "img-1640227389597.PNG",
+  "id": 2
  },
  {
   "name": "Vestido",
@@ -54,7 +54,7 @@
    "red",
    "blue",
    "green",
-   "balck",
+   "black",
    "white"
   ],
   "sizes": [
@@ -65,8 +65,8 @@
    "XL"
   ],
   "category": "Vestidos",
-  "img": "img-1640227460128.PNG",
-  "id": 10
+  "img-pr": "img-1640227460128.PNG",
+  "id": 3
  },
  {
   "name": "Vestido",
@@ -77,7 +77,7 @@
    "red",
    "blue",
    "green",
-   "balck",
+   "black",
    "white"
   ],
   "sizes": [
@@ -88,21 +88,21 @@
    "XL"
   ],
   "category": "Vestidos",
-  "img": "img-1640227541669.PNG",
-  "id": 11
+  "img-pr": "img-1640227541669.PNG",
+  "id": 4
  },
  {
-  "id": 12,
+  "id": 5,
   "name": "Short",
   "price": 1000,
   "description": "",
-  "img": "img-1640227607064.PNG",
+  "img-pr": "img-1640227607064.PNG",
   "category": "Shorts",
   "colours": [
    "red",
    "blue",
    "green",
-   "balck",
+   "black",
    "white"
   ],
   "sizes": [
@@ -123,7 +123,7 @@
    "red",
    "blue",
    "green",
-   "balck",
+   "black",
    "white"
   ],
   "sizes": [
@@ -134,8 +134,8 @@
    "XL"
   ],
   "category": "Jeans",
-  "img": "img-1640227664100.PNG",
-  "id": 13
+  "img-pr": "img-1640227664100.PNG",
+  "id": 6
  },
  {
   "name": "Jean",
@@ -146,7 +146,7 @@
    "red",
    "blue",
    "green",
-   "balck",
+   "black",
    "white"
   ],
   "sizes": [
@@ -157,7 +157,7 @@
    "XL"
   ],
   "category": "Jeans",
-  "img": "img-1640227734884.PNG",
-  "id": 14
+  "img-pr": "img-1640227734884.PNG",
+  "id": 7
  }
 ]

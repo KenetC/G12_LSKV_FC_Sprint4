@@ -1,7 +1,8 @@
 const jsonDB = require('../model/jsonProductsDataBase');
 const productModel = jsonDB('productsDataBase');
 const categories = ["Blusas", "Remeras", "Vestidos", "Monos", "Shorts", "Faldas", "Jeans"];
-const log = console.log; 
+const fs = require('fs');
+const path = require('path');
 
 const productController = {
     prodDetail: (req,res) =>{
@@ -20,23 +21,32 @@ const productController = {
     },
 
     store: (req,res)=>{
-        console.log('Entrando a Store del product Controller');
+        console.log('Entrando a Store del productController');
         console.log('Va el req.file: ')
         console.log(req.file);
         console.log('Va req.files: ')
         console.log(req.files);
         console.log('Aca va el BODY: ')
         console.log(req.body);
+        let colorArray = req.body.color;
+        let sizesArray = req.body.sizes;
+        if(!Array.isArray(req.body.color)) colorArray = [req.body.color];
+        if(!Array.isArray(req.body.sizes)) sizesArray = [req.body.sizes];  
+        let filenamesImgSec = [];
+        for(let i =0; i < req.files.images.length; i++)filenamesImgSec.push(req.files.images[i].filename);
         let aCrear = {
             name: req.body.name,
             price: Number(req.body.price),
             description: req.body.description, 
             stars: 0,
-            colours: req.body.color, 
-            sizes:req.body.sizes,
             category: req.body.category,
-            img: req.file.filename
+            'img-pr': req.files.image[0].filename, 
+            'img-se': filenamesImgSec
         };
+        aCrear.colours = colorArray; 
+        aCrear.sizes = sizesArray;
+        console.log('aCrear: ');
+        console.log(aCrear);
         productModel.create(aCrear);
         return res.redirect('/products'); 
     },
@@ -46,6 +56,7 @@ const productController = {
 
         return res.render("products/productEdition", {product})
     },
+
     prodEdition: (req,res)=>{
       let products= productModel.find(req.params.id)
        let productBody={
@@ -74,10 +85,7 @@ const productController = {
         }
         return res.render('products/productfilter',{productList: filtrado, Filtros: aFiltrar});
     },
-    cambio: function(req,res){
-        
-    },
-    prodCart1: function(req,res) {
+    prodCart1: function(req,res){
         return res.render("products/productCart")
     },
     
@@ -93,11 +101,14 @@ const productController = {
         return res.render("products/productCart4")
     },
     destroy: (req, res) =>{
-        //let product = productModel.find(req.params.id)
-		//fs.unlinkSynk(path.join(__dirname,'../','../public/images/products','${product.image}'))
-		productModel.delete(req.params.id);
+        let product = productModel.find(req.params.id)
+		fs.unlinkSync(path.join(__dirname,`../../public/images/products/${product['img-pr']}`))
+		for(let i =0; i < product['img-se'].length ; i++){
+            fs.unlinkSync(path.join(__dirname,`../../public/images/products/${product['img-se'][i]}`))
+        };
+        productModel.delete(req.params.id);
 		res.redirect('/products');
     }
-}
+};
 
 module.exports = productController;
