@@ -159,5 +159,26 @@
   "category": "Jeans",
   "img-pr": "img-1640227734884.PNG",
   "id": 7
+ },
+ {
+  "name": "Pantalon",
+  "price": 1200,
+  "description": "Pantalon Rosa blablablablablablablablablabla",
+  "stars": 0,
+  "category": "Pantalones",
+  "img-pr": "im-1640704980235.PNG",
+  "img-se": [
+   "im-1640704980246.PNG",
+   "im-1640704980264.PNG"
+  ],
+  "colours": [
+   "red"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "L"
+  ],
+  "id": 8
  }
 ]

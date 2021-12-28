@@ -47,7 +47,11 @@
                             <% } %> 
 
                         </div>
-                        <p> 127437 Reviews </p>
+                        <% if(product.stars == 0){ %>
+                            <p>0 Reviews </p>  
+                        <%}else{ %> 
+                            <p> 127437 Reviews </p>
+                        <%} %> 
                     </div>
 
                     <p class="precio"> $<%= product.price %>  </p>

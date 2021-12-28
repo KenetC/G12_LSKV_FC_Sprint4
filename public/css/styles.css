@@ -220,6 +220,7 @@ div.login-home {
 
 header nav .header-container div a{
     color: #BA135D;
+    font-size: 16px;
 }
 
 /** Home **/
@@ -1375,8 +1376,8 @@ div.text{
         left : 15vw;
     }
 
-    div.burger-menu a,
-    div.login-home a {
+    header nav .header-container .burger-menu a,
+    header nav .header-container  div.login-home a {
         font-size: 5vw;
     }
     
@@ -1514,10 +1515,12 @@ div.text{
         font-size: 15px;
         justify-content: flex-end;
     }
-    div.login-home .IngresarRegistrarse a{
-        font-size: 12px;
+    header nav .header-container div.login-home .IngresarRegistrarse a{
+        font-size: 15px;
     }
-
+    header nav .header-container div.login-home a { 
+        font-size: 16px;
+    }
     /* Footer */
     .footer-Top { 
         flex-wrap: nowrap;

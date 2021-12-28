@@ -5,7 +5,6 @@ const path = require('path');
 const multer = require('multer');
 
 var upload = require('../middlewares/img-products');
-var uploadM = require('../middlewares/imgs-products');
 
 const productController = require('../controllers/productController');
 
