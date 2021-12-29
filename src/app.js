@@ -19,7 +19,9 @@ const homeRoutes = require('./routers/homeRoutes');
 app.use('/', homeRoutes);
 app.use('/products', productRoutes);
 app.use('/users', usersRoutes);
-
+app.get('/header',(req,res)=>{
+    res.render('header-cambios');
+});
 app.get('/empresa', (req,res)=>{
     res.render('empresa');
 }); 
