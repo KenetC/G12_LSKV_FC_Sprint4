@@ -1,42 +1,35 @@
 * {
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+:root{
+    --rojo: #BA135D;
+    --rosa: #F8E2CF;
 }
 
 main,header,footer{
     font-family: 'Poppins', sans-serif;
 }
 
-header nav {
+header div.container {
     max-width: 1000px;
 }
 
-nav{
+div.container{
     width: 100%;
 }
-div.IngresarRegistrarse,
-div.list-container { 
-    display: none;
+
+header div .header-container div.IngresarRegistrarse a,
+header div .header-container div a{
+    color: var(--rojo);
+    font-size: 14px;
 }
 
-.list-home {
-    list-style: none;
-    display: flex;
-}
-div.IngresarRegistrarse a{
-    font-size: 12px;
-}
-
-.list-home li{
-    padding: 20px 14px;
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.list-home li a {
-    text-decoration: none;
-    padding: 5px;
-}
+header div .header-container div.login-home a, 
+header div .header-container div.burger-menu a{
+    font-size: 25px;
+} 
 
 /* LOCALES */
 main.locales div div .local-maps{
@@ -74,8 +67,6 @@ main.locales div div div div div .descripcion{
     font-size: 13px;
 }
 
-
-
 /*CONTACTO*/
 
 main.contact{
@@ -97,7 +88,7 @@ main.contact h1.title:before{
     width: 200px;
     height: 1px;
     bottom: 2px;
-    border-bottom: 3px solid #BA135D;
+    border-bottom: 3px solid var(--rojo);
 }
 
 main.contact div.questions{
@@ -120,7 +111,7 @@ ul{
 }
 .preg-frec>li:hover>a{
     color:000;
-    background-color: #F8E2CF;
+    background-color: var(--rosa);
 }
 .preg-frec>li{
     text-align: center;
@@ -138,34 +129,9 @@ ul{
 .preguntas{
     text-align: left;
 }
-/**/
-
-div.IngresarRegistrarse,
-div.list-container { 
-    display: none;
-    color: #BA135D ;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.list-home {
-    list-style: none;
-    display: flex;
-}
-div.IngresarRegistrarse a{
-    font-size: 12px;
-}
-
-.list-home li{
-    padding: 20px 14px;
-    font-size: 12px;
-}
-
-.list-home li a {
-    text-decoration: none;
-    padding: 5px;
-}
+/* Header */
 header { 
-    background-color: #F8E2CF;
+    background-color: var(--rosa);
     display: flex;
     justify-content: center;
     z-index: 3;
@@ -173,14 +139,11 @@ header {
     width: 100%;
     top: 0px;
 }
+
 .header-container {
     display: flex;
-    width: 100%;
-    display: flex;
+    height: 55px;
     justify-content: space-between;
-    text-align: center;
-    flex-direction: row;
-    position: relative;
 }
 
 .logo{
@@ -192,36 +155,101 @@ div.burger-menu a{
     font-size: 20px;
     text-decoration: none;
 }
-
 div.login-home a{
     margin: 0px 5px;
 }
-
 div.burger-menu,
 div.login-home{ 
-    padding: 15px 0px ;
+    padding-top:10px ;
 }
 
 div.logo-container{
-    padding: 6px 0px ;
+    padding: 5px 0px ;
 }
 
 div.burger-menu {
+    padding-left:5px;
+    margin-left: 50px;
     position: absolute;
-    left : 18vw;
 }
 
-div.login-home {
-    position: absolute;
+div.buscador { 
+    display: none;
+}
+
+div.buscador2{ 
     display: flex;
-    justify-content: flex-end;
-    right: 2vw;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+header div.buscador form,
+div.buscador2 form { 
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+header div.buscador form input,
+div.buscador2 form input { 
+    width: 100%;
+    display: block;
+    border: solid 1px var(--rojo);
+    height: 33px;
+    border-radius: 3px;
+}
+header div.buscador form button,
+div.buscador2 form button{ 
+    position: absolute;
+    cursor: pointer;
+    right: 2px;
+    border: none;
+    border-left: solid 1px var(--rojo);
+    background-color: #FFF;
+    width: 30px;
+}
+header div.buscador form button i,
+div.buscador2 form button i {
+    color: var(--rojo);
+    font-size: 20px ;
 }
 
-header nav .header-container div a{
-    color: #BA135D;
-    font-size: 16px;
+nav.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
+div.IngresarRegistrarse,
+div.list-container { 
+    display: none;
+    color: var(--rojo) ;
+    font-family: 'Bebas Neue', cursive;
+}
+.list-user,
+.list-home {
+    list-style: none;
+    display: flex;
+}
+
+div.IngresarRegistrarse a{
+    font-size: 12px;
+}
+
+.list-home li{
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.list-user li{ 
+    padding: 10px 2px;
+    font-size: 12px;
+}
+.IngresarRegistrarse li a,
+.list-home li a {
+    text-decoration: none;
+    padding: 5px;
+    color: var(--rojo);
+}
+
 
 /** Home **/
 .banner{
@@ -260,7 +288,7 @@ section div .tittle-popu:before {
     bottom: 5px;
     position: absolute;
     content: "";
-    border-bottom: 3px solid #BA135D;
+    border-bottom: 3px solid var(--rojo);
 }
 
 .populares .popular-now .btn-popu{
@@ -287,7 +315,6 @@ div.products article a{
     text-decoration: none;
 }
 
-
 /* Main */ 
 
 main.home section article{
@@ -305,7 +332,7 @@ main.home section article img{
 
 main.home{
     width: 95%;
-    margin: 80px auto 0px auto; 
+    margin: 95px auto 0px auto; 
 }
 
 .products article{
@@ -624,7 +651,7 @@ main .next{
 div.back,
 main{ 
     max-width: 1040px;
-    margin: 90px auto 0px auto;
+    margin: 95px auto 0px auto;
 }
 
 main article.prod-detail{
@@ -1333,7 +1360,7 @@ main article.pago div img{
 .main-empresa{
     display: flex;
     flex-direction: column;
-    margin: 75px auto 0px auto;
+    margin: 85px auto 0px auto;
     justify-content: space-between;
 }
 
@@ -1346,13 +1373,11 @@ div.text{
 .text h1 { 
     font-size: 16px;
     margin-top:5px;
-    margin-bottom: 14px;
     color:inherit;
     font-weight: normal; 
 }
 .text h2 { 
     font-size: 44px;
-    margin-top:26px;
     margin-bottom: 37px;
     color:inherit;
     font-weight: normal;
@@ -1365,22 +1390,20 @@ div.text{
 }
 
 @media (min-width:370px){
+    /* Header */
 
     .logo{
         display: flex;
         justify-content: flex-start;
-        width: 11vw;
     }
 
-    div.burger-menu {
-        left : 15vw;
-    }
-
-    header nav .header-container .burger-menu a,
+    /* header nav .header-container .burger-menu a,
     header nav .header-container  div.login-home a {
         font-size: 5vw;
-    }
+    } */
     
+
+    /* Footer */
     .footer-Top .description { 
         width: 35%;
     }
@@ -1487,19 +1510,15 @@ div.text{
         display: flex;
         flex-wrap: wrap;
     }
-
-    /*Local*/
-    
-    
 }
 
 @media (min-width: 700px){
-    
+    /* Header */
     .logo{
         width: 50px;
     }
-    .header-container .list-container,
-    .header-container .IngresarRegistrarse{
+    .container .list-container,
+    .container .IngresarRegistrarse{
         display: block;
     }
     
@@ -1515,11 +1534,21 @@ div.text{
         font-size: 15px;
         justify-content: flex-end;
     }
-    header nav .header-container div.login-home .IngresarRegistrarse a{
-        font-size: 15px;
+    header div .header-container div.login-home .IngresarRegistrarse a{
+        font-size: 13px;
     }
-    header nav .header-container div.login-home a { 
-        font-size: 16px;
+    header div.buscador2 { 
+        display: none;
+    }
+    header div.buscador { 
+        display: flex;
+        width: 70%;
+    }
+    header div.buscador form { 
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
     }
     /* Footer */
     .footer-Top { 
