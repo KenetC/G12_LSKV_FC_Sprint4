@@ -196,16 +196,17 @@ div.buscador2 form input {
     border: solid 1px var(--rojo);
     height: 33px;
     border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0,30%);
 }
 header div.buscador form button,
 div.buscador2 form button{ 
     position: absolute;
     cursor: pointer;
-    right: 2px;
+    right: 1px;
     border: none;
     border-left: solid 1px var(--rojo);
     background-color: #FFF;
-    width: 30px;
+    width: 35px;
 }
 header div.buscador form button i,
 div.buscador2 form button i {
@@ -954,21 +955,25 @@ main.productList .title2:before{
     width: 430px;
 }
 
-main.productList .products  article{
+main.productList .products article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    text-align: left
+    text-align: left;
+    border-radius: 4px;
 } 
 main.productList .products article:hover{
     box-shadow: #666;
 }
-
+main.productList .products article:hover .category { 
+    display: block;
+}
 main.productList .products .descripcion{
     padding: 10px;
 }
-main.productList .products article .cat{
+main.productList .products article .category{
+    display: none;
     color: #666;
 }
 main.productList .products article .precio{
@@ -979,6 +984,7 @@ main.productList .products article img{
     padding: 5px;
     text-align: center;
 }
+
 /* UsersList */
 
 main.usersList h2.title{ 
@@ -1495,10 +1501,9 @@ div.text{
         flex-direction: row;
         justify-content: space-around;
     }
-    main.productList .products article{
+    main.productList .products article{ 
         width: 40%;
     }
-
     /*carrito 4*/
 
     main article.adress{
@@ -1590,9 +1595,7 @@ div.text{
      }
 
      main section .cuerpo .login {
-         
          float: left;
-         
      }
      main section .cuerpo .register{
          width:300px;
@@ -1640,11 +1643,6 @@ div.text{
     main div.Recomendaciones article { 
         width: 190px;
     }
-    /*ProductList*/
-    main.productList .products article{
-        width: 30%;
-    }
-
     /*Product car*/
     /*Product car2*/
 
@@ -1718,7 +1716,10 @@ div.text{
         width: 550px;
         height: 250px;
     }
-
+    /* Product List */
+    main.productList .products article { 
+        width: 20%;
+    }
 }
 
 @media (min-width: 808px){
