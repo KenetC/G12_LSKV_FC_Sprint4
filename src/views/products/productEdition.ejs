@@ -7,7 +7,7 @@
         <%- include('../partials/header') %>
         <main class="charger">
             <div>
-                <form action="?_method=PUT" method="POST">
+                <form action="?_method=PUT" method="POST" enctype="multipart/form-data">
                     <fieldset class="form-prod-char">
                         <legend class="legend-formulario">Editar producto</legend>
                         
@@ -75,7 +75,21 @@
                         </label>
 
                         <label for="image">Imagen principal:
+                            <img src="/images/products/<%= product['img-pr'] %>" alt="" width="50px">
                             <input type="file" name="image" id="image">
+                        </label>
+                        <label for= "imgSec"> Marcar imagenes que se quedaran:
+                            <div class="color">
+                                <% for (let i =0; i< product['img-se'].length; i++){ %>
+                                    <div class="check-c-s">
+                                        <img src="/images/products/<%=product['img-se'][i]%>" width="50px">
+                                        <input type="checkbox" name ="imgSec" value="<%=product['img-se'][i]%>"> 
+                                    </div>
+                                <% } %>
+                            </div>
+                        </label>
+                        <label for="images">Imagenes secundarias:
+                            <input type="file" name="images" id="images" multiple>
                         </label>
 
                         <label for="description">Descripción: 
@@ -83,7 +97,7 @@
                         </label>
 
                         <div class="bt">
-                            <input type="submit" value="Publicar">
+                            <input type="submit" value="Editar">
                         </div>
 
                     </fieldset>

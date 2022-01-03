@@ -3,6 +3,7 @@ const productModel = jsonDB('productsDataBase');
 const categories = ["Blusas", "Remeras", "Vestidos", "Monos", "Shorts", "Faldas", "Jeans"];
 const fs = require('fs');
 const path = require('path');
+const { Console } = require('console');
 
 const productController = {
     prodDetail: (req,res) =>{
@@ -59,17 +60,40 @@ const productController = {
 
     prodEdition: (req,res)=>{
       let products= productModel.find(req.params.id)
-       let productBody={
-           id: Number(req.params.id),
-           name: req.body.name ,
-           price: Number(req.body.price) ,
-           description: req.body.description ,
-           img: products.img,
-           category:products.category,
-           colours: products.colours,
-           sizes: products.sizes,
-           stars: Number(products.stars),
-       };
+      let imgP = products['img-pr'];
+      let imgSecArray = req.body.imgSec;
+      if(!Array.isArray(req.body.imgSec)) imgSecArray = [req.body.imgSec];
+      console.log('Aca va Files: ');
+      console.log(req.files);
+      if (req.files.image){
+        fs.unlinkSync(path.join(__dirname,`../../public/images/products/${products['img-pr']}`))
+        imgP = req.files.image[0].filename;
+      }
+      console.log('Aca va BODY: ');
+      console.log(req.body);
+      if (req.files.images){
+        products['img-se'].forEach(img => {
+            if ( ! imgSecArray.find( imagen => imagen ==  img) ){
+                console.log("Elimina la imagen", img )
+                fs.unlinkSync(path.join(__dirname,`../../public/images/products/${img}`))
+            }
+        });
+        for(let i =0; i < req.files.images.length; i++) imgSecArray.push(req.files.images[i].filename);
+      }
+      let productBody={
+        id: Number(req.params.id),
+        name: req.body.name,
+        price: Number(req.body.price) ,
+        description: req.body.description ,
+        category:products.category,
+        colours: products.colours,
+        sizes: products.sizes,
+        stars: Number(products.stars),
+        'img-pr': imgP,
+        'img-se': imgSecArray
+    };
+      console.log(req.files);
+      
      
        productModel.update(productBody);
        res.redirect("/products")
