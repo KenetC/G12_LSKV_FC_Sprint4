@@ -1,7 +1,5 @@
 const express = require('express'); 
 const router = express.Router();
-const multer = require('multer');
-const storage = require('../middlewares/img-users'); 
 
 const usersController = require('../controllers/usersController.js');
 const upload = require('../middlewares/img-users');
