@@ -21,6 +21,7 @@ const usersController = {
 			let aCrear = req.body;
 			aCrear.dni = Number(aCrear.dni);
 			aCrear.image = req.file.filename;
+			console.log(req.file)
 			let aCrearID = userModel.create(aCrear);
 			res.redirect(`/users/${aCrearID}`);
 		}else { 
@@ -38,7 +39,12 @@ const usersController = {
 	list: (req,res)=>{
 		const users = userModel.all(); 
 		res.render('users/usersList',{users});
-	}
+	},
+
+	usuario: (req,res)=>{
+		const usuario = userModel.find(req.params.id);
+        res.render('users/usuario',{ element : usuario});
+    }
    
 }
 

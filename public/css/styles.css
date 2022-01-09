@@ -647,6 +647,38 @@ main .next{
     border-radius: 5%;
 }
 
+/*Usuarios*/
+
+main.usuarios div .img-user{
+    width: 50%;
+}
+
+main.usuarios div div img{
+    width: 50%;
+}
+
+main.usuarios h1.title{ 
+    display: flex;
+    position: relative;
+    justify-content:center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin: 15px 0px 40px;
+}
+
+main.usuarios h1.title:before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 2px;
+    border-bottom: 3px solid #BA135D;
+}
+
+main.usuarios div div span.negrita{
+    font-weight: bold;
+}
+
 /* Product Detail */
 
 div.back,
@@ -1618,6 +1650,14 @@ div.text{
         width: 45%;
     }
     /*Register*/
+
+    /*Usuarios*/
+    
+    main.usuarios div.profile-user{
+        display: flex;
+        justify-content: center;
+    }
+    
 
     /* Product Detail */
 
