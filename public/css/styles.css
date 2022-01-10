@@ -648,13 +648,11 @@ main .next{
 }
 
 /*Usuarios*/
-
-main.usuarios div .img-user{
-    width: 50%;
-}
-
-main.usuarios div div img{
-    width: 50%;
+main.usuarios div.profile-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main.usuarios h1.title{ 
@@ -678,6 +676,8 @@ main.usuarios h1.title:before{
 main.usuarios div div span.negrita{
     font-weight: bold;
 }
+
+
 
 /* Product Detail */
 
@@ -1655,6 +1655,7 @@ div.text{
     
     main.usuarios div.profile-user{
         display: flex;
+        flex-direction: row;
         justify-content: center;
     }
     
