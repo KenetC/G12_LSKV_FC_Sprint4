@@ -1051,9 +1051,10 @@ main.usersList section {
 
 main.usersList section form{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-content: center;
 }
 
 main.usersList article { 
@@ -1063,6 +1064,7 @@ main.usersList article {
     border-radius: 10px;
     margin: 5px;
     padding: 3px;
+    justify-content: space-evenly;
 }
 
 main.usersList article:hover{ 
@@ -1107,6 +1109,7 @@ main.usersList button.bt-delete{
     height: 20px;
     align-items: center;
     justify-content: center;
+    margin: 0 15px;
 }
 /* Product car *//*titulo carrito con paso*/
 main section h4.title { 
