@@ -1,4 +1,4 @@
-const fs = require('fs');
+/* const fs = require('fs');
 const path = require('path');
 
 const jsonDB = require('../model/jsonUsersDatabase');
@@ -48,4 +48,4 @@ const usersController = {
    
 }
 
-module.exports = usersController;
+module.exports = usersController; */
